@@ -9,7 +9,7 @@ while True:
     current_month = today.month
     current_day = today.day
 
-    last_year = current_year - 10
+    last_year = current_year - 1
     last_month = today.month
     last_day = current_day - 0  # In case it is a leap year
 

@@ -18,7 +18,7 @@ while True:
     res_date = start
 
     while res_date <= end:
-        for i in range(random.randrange(0, 1)):
+        for i in range(random.randrange(0, 2)):
             with open('change-file.txt', 'a') as wf:
                 wf.write(f'\n{res_date}')
             os.system(f'git add .')

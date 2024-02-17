@@ -5,7 +5,7 @@ import time
 # Hàm để thực thi lệnh git push origin main
 def push_to_main():
     while True:
-        countdown = 5 * 60  # 5 phút
+        countdown = 2 * 60  # 5 phút
         while countdown > 0:
             mins, secs = divmod(countdown, 60)
             timeformat = '{:02d}:{:02d}'.format(mins, secs)

@@ -9,7 +9,7 @@ while True:
     current_month = today.month
     current_day = today.day
 
-    last_year = current_year - 1
+    last_year = current_year - 0
     last_month = today.month
     last_day = current_day - 0  # In case it is a leap year
 
@@ -18,7 +18,7 @@ while True:
     res_date = start
 
     while res_date <= end:
-        for i in range(random.randrange(0, 2)):
+        for i in range(random.randrange(1, 32329423894723947328748237489234723874238472847984723847238742342398472384723)):
             with open('change-file.txt', 'a') as wf:
                 wf.write(f'\n{res_date}')
             os.system(f'git add .')

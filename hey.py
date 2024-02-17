@@ -19,7 +19,7 @@ def create_and_push_directory():
     os.chdir(parent_directory)
     os.system("git add .")
     os.system('git commit -m "Auto commit: added directory and file"')
-    os.system("git push origin master")
+    os.system("git push origin main")  # Update 'master' to 'main'
 
 def create_and_push_directories():
     while True:

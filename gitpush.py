@@ -4,9 +4,12 @@ import time
 
 # Hàm để thực thi lệnh git push origin main
 def push_to_main():
+    countdown = 5 * 60  # 5 phút
     while True:
         os.system('git push origin main')
-        time.sleep(0.1)
+        print(f"Đang đợi {countdown // 60} phút {countdown % 60} giây cho lần push tiếp theo.")
+        time.sleep(1)  # Đếm ngược
+        countdown -= 1
 
 # Tạo một luồng để chạy hàm push_to_main
 thread = threading.Thread(target=push_to_main)
